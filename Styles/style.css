@@ -1,0 +1,15 @@
+/* CSS Main Components */
+@import url('Main Components/global.css');
+@import url('Main Components/nav.css');
+@import url('Main Components/hero.css');
+@import url('Main Components/about.css');
+@import url('Main Components/skills.css');
+@import url('Main Components/experience.css');
+@import url('Main Components/contact.css');
+@import url('Main Components/footer.css');
+
+/* CSS Additions */
+@import url('Font sources/fonts.css');
+@import url('Color Pallettes/colors.css');
+@import url('Flexbox Templates/desktop templates.css');
+@import url('Flexbox Templates/mobile templates.css');

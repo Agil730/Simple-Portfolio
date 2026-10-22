@@ -1,0 +1,62 @@
+/* Experience Design */
+.experience-header {
+    text-align: center;
+}
+
+.education-experience,
+.internship-experience {
+    position: relative;
+    width: 100%;
+    max-width: 1150px;
+    padding-left: 2.5rem;
+}
+
+.education-experience::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 0.55rem;
+    bottom: -2rem;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.education-experience::after,
+.internship-experience::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    box-shadow: 0 0 12px var(--glow-color);
+}
+
+.education-experience h3,
+.internship-experience h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.education-experience h4,
+.internship-experience h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.education-experience p,
+.internship-experience p {
+    max-width: 65ch;
+    color: var(--muted-color);
+}
+
+@media (max-width: 768px) {
+    .education-experience,
+    .internship-experience {
+        padding-left: 2rem;
+    }
+}

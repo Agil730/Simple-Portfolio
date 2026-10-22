@@ -1,0 +1,10 @@
+:root {
+    --main-color: #00b7ff;
+    --text-color: #e6f3fb;
+    --background-color: #050d17;
+    --surface-color: #0a1826;
+    --muted-color: #8ea8bc;
+    --border-color: rgba(0, 183, 255, 0.22);
+    --glow-color: rgba(0, 183, 255, 0.4);
+    --grid-color: rgba(0, 183, 255, 0.05);
+}

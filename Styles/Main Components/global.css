@@ -1,0 +1,68 @@
+/* Global Web UI Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    /* Kisi tipis ala blueprint */
+    background-image:
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 56px 56px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+section {
+    scroll-margin-top: 80px;
+    padding: 5rem 2rem;
+}
+
+/* section title: font Avengeance */
+h2 {
+    font-family: 'Avengeance', 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+    text-shadow: 0 0 14px var(--glow-color);
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: var(--background-color);
+}
+
+:focus-visible {
+    outline: 2px solid var(--main-color);
+    outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 3.5rem 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+}

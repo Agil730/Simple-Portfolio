@@ -1,0 +1,30 @@
+/* Contact Design */
+.contact-header,
+.contact-button {
+    text-align: center;
+}
+
+.contact-button a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    border: 2px solid var(--main-color);
+    border-radius: 999px;
+    font-weight: bold;
+    color: var(--main-color);
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button img {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 0.6rem;
+    vertical-align: middle;
+}
+
+.contact-button a:hover {
+    background-color: var(--main-color);
+    color: var(--background-color);
+    box-shadow: 0 0 24px var(--glow-color);
+}

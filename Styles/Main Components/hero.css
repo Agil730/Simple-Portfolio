@@ -1,0 +1,77 @@
+/* Hero Design */
+.hero {
+    min-height: calc(100vh - 76px);
+    padding: 4rem 2rem;
+    background: radial-gradient(
+        ellipse 60% 70% at 30% 45%,
+        color-mix(in srgb, var(--main-color) 16%, transparent),
+        transparent 70%
+    );
+}
+
+.hero-image img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid var(--main-color);
+    box-shadow:
+        0 0 0 10px color-mix(in srgb, var(--main-color) 10%, transparent),
+        0 0 40px var(--glow-color),
+        0 0 90px var(--glow-color);
+}
+
+.hero-identity {
+    text-align: left;
+}
+
+/* Name Neon Style */
+.hero-name {
+    font-family: 'Avengeance', 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+    text-shadow:
+        0 0 8px var(--main-color),
+        0 0 28px var(--glow-color),
+        0 0 60px var(--glow-color);
+    animation: power-on 1.2s ease-out both;
+}
+
+.hero-title {
+    margin-top: 1rem;
+    font-family: 'AceOfSwordsLaser', 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: clamp(1rem, 2.4vw, 1.5rem);
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+}
+
+/* Neon Effect */
+@keyframes power-on {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    14%  { opacity: 0.2; }
+    20%  { opacity: 1; }
+    26%  { opacity: 0.4; }
+    34%, 100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 3rem 1.25rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-identity {
+        text-align: center;
+    }
+}

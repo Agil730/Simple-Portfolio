@@ -1,0 +1,69 @@
+/* Navbar Design */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.9rem 2rem;
+    background-color: color-mix(in srgb, var(--background-color) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-text {
+    font-family: 'AceOfSwordsLaser', 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    color: var(--main-color);
+}
+
+.logo-subtext {
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: var(--muted-color);
+}
+
+.nav-links a {
+    display: inline-block;
+    position: relative;
+    margin-left: 1.75rem;
+    padding: 0.35rem 0;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+}
+
+/* Garis bawah yang memanjang saat di-hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 8px var(--main-color);
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    /* Di mobile navbar jadi 2 baris, jadi tidak dibuat sticky */
+    .navbar {
+        position: static;
+        padding: 1rem 1.25rem;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin: 0 0.7rem;
+    }
+}
